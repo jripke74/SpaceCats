@@ -7,7 +7,7 @@
 //
 
 #import "GameViewController.h"
-#import "GameScene.h"
+#import "TitleScene.h"
 
 @implementation GameViewController
 
@@ -15,15 +15,15 @@
     [super viewDidLayoutSubviews];
 
     // Load the SKScene from 'GameScene.sks'
-    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+    TitleScene *titleScene = (TitleScene *)[SKScene nodeWithFileNamed:@"TitleScene"];
     
     // Set the scale mode to scale to fit the window
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    titleScene.scaleMode = SKSceneScaleModeAspectFill;
     
     SKView *skView = (SKView *)self.view;
     
     // Present the scene
-    [skView presentScene:scene];
+    [skView presentScene:titleScene];
     
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
