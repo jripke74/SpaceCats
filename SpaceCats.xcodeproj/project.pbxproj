@@ -22,6 +22,7 @@
 		891E5B371F1CF70F003C0FFC /* spaceDogA1.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5B0F1F1CF70F003C0FFC /* spaceDogA1.png */; };
 		891E5B441F1CFBD3003C0FFC /* machine1.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5B421F1CFBD3003C0FFC /* machine1.png */; };
 		891E5B451F1CFBD3003C0FFC /* machine2.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5B431F1CFBD3003C0FFC /* machine2.png */; };
+		891E5B481F1D0341003C0FFC /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E5B471F1D0341003C0FFC /* MachineNode.m */; };
 		896FF2CD1F1B2DF1006A08FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2CC1F1B2DF1006A08FA /* main.m */; };
 		896FF2D01F1B2DF1006A08FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2CF1F1B2DF1006A08FA /* AppDelegate.m */; };
 		896FF2DA1F1B2DF1006A08FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2D91F1B2DF1006A08FA /* GameViewController.m */; };
@@ -48,6 +49,8 @@
 		891E5B0F1F1CF70F003C0FFC /* spaceDogA1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceDogA1.png; sourceTree = "<group>"; };
 		891E5B421F1CFBD3003C0FFC /* machine1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = machine1.png; sourceTree = "<group>"; };
 		891E5B431F1CFBD3003C0FFC /* machine2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = machine2.png; sourceTree = "<group>"; };
+		891E5B461F1D0341003C0FFC /* MachineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineNode.h; sourceTree = "<group>"; };
+		891E5B471F1D0341003C0FFC /* MachineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineNode.m; sourceTree = "<group>"; };
 		896FF2C81F1B2DF1006A08FA /* SpaceCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896FF2CC1F1B2DF1006A08FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		896FF2CE1F1B2DF1006A08FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				890148FB1F1C1EA6007E6169 /* TitleScene.m */,
 				8901492D1F1C433E007E6169 /* GamePlayScene.h */,
 				8901492E1F1C433E007E6169 /* GamePlayScene.m */,
+				891E5B461F1D0341003C0FFC /* MachineNode.h */,
+				891E5B471F1D0341003C0FFC /* MachineNode.m */,
 				891E5AE91F1CF70F003C0FFC /* Sprites.atlas */,
 				896FF2DB1F1B2DF1006A08FA /* Main.storyboard */,
 				896FF2DE1F1B2DF1006A08FA /* Assets.xcassets */,
@@ -227,6 +232,7 @@
 				8901492F1F1C433E007E6169 /* GamePlayScene.m in Sources */,
 				896FF2CD1F1B2DF1006A08FA /* main.m in Sources */,
 				890148FC1F1C1EA6007E6169 /* TitleScene.m in Sources */,
+				891E5B481F1D0341003C0FFC /* MachineNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

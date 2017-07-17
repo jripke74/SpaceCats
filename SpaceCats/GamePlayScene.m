@@ -7,6 +7,7 @@
 //
 
 #import "GamePlayScene.h"
+#import "MachineNode.h"
 
 @implementation GamePlayScene
 
@@ -16,9 +17,8 @@
         background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         background.size = self.frame.size;
         [self addChild:background];
-        SKSpriteNode *machine = [SKSpriteNode spriteNodeWithImageNamed:@"machine1"];
-        machine.position = CGPointMake(CGRectGetMidX(self.frame), 12);
-        machine.anchorPoint = CGPointMake(0.5, 0);
+        
+        MachineNode *machine = [MachineNode machineAtPosition:CGPointMake(CGRectGetMidX(self.frame), 12)];
         [self addChild:machine];
         
     }
