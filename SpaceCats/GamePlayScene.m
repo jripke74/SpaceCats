@@ -40,8 +40,11 @@
 - (void) shootProjectileTowardsPosition:(CGPoint)position {
     SpaceCatNode *spaceCat = (SpaceCatNode*)[self childNodeWithName:@"SpaceCat"];
     [spaceCat performTap];
-    ProjectileNode *projectile = [ProjectileNode projectileAtPosition:position];
+    MachineNode *machine = (MachineNode *)[self childNodeWithName:@"Machine"];
+    ProjectileNode *projectile = [ProjectileNode projectileAtPosition:CGPointMake(machine.position.x, machine.position.y+machine.frame.size.height-15)];
     [self addChild:projectile];
+    [projectile moveTowardsPosition:position];
+    
 }
 
 @end

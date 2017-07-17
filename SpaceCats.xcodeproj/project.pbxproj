@@ -25,6 +25,7 @@
 		891E5B481F1D0341003C0FFC /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E5B471F1D0341003C0FFC /* MachineNode.m */; };
 		891E5B4B1F1D1F7A003C0FFC /* SpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E5B4A1F1D1F7A003C0FFC /* SpaceCatNode.m */; };
 		891E5B4E1F1D2A69003C0FFC /* ProjectileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E5B4D1F1D2A69003C0FFC /* ProjectileNode.m */; };
+		891E5B541F1D424A003C0FFC /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E5B531F1D424A003C0FFC /* Utility.m */; };
 		896FF2CD1F1B2DF1006A08FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2CC1F1B2DF1006A08FA /* main.m */; };
 		896FF2D01F1B2DF1006A08FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2CF1F1B2DF1006A08FA /* AppDelegate.m */; };
 		896FF2DA1F1B2DF1006A08FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2D91F1B2DF1006A08FA /* GameViewController.m */; };
@@ -57,6 +58,8 @@
 		891E5B4A1F1D1F7A003C0FFC /* SpaceCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceCatNode.m; sourceTree = "<group>"; };
 		891E5B4C1F1D2A69003C0FFC /* ProjectileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileNode.h; sourceTree = "<group>"; };
 		891E5B4D1F1D2A69003C0FFC /* ProjectileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectileNode.m; sourceTree = "<group>"; };
+		891E5B521F1D424A003C0FFC /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		891E5B531F1D424A003C0FFC /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		896FF2C81F1B2DF1006A08FA /* SpaceCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896FF2CC1F1B2DF1006A08FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		896FF2CE1F1B2DF1006A08FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				896FF2E01F1B2DF1006A08FA /* LaunchScreen.storyboard */,
 				896FF2E31F1B2DF1006A08FA /* Info.plist */,
 				896FF2CB1F1B2DF1006A08FA /* Supporting Files */,
+				891E5B521F1D424A003C0FFC /* Utility.h */,
+				891E5B531F1D424A003C0FFC /* Utility.m */,
 			);
 			path = SpaceCats;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				896FF2D01F1B2DF1006A08FA /* AppDelegate.m in Sources */,
 				891E5B4E1F1D2A69003C0FFC /* ProjectileNode.m in Sources */,
 				8901492F1F1C433E007E6169 /* GamePlayScene.m in Sources */,
+				891E5B541F1D424A003C0FFC /* Utility.m in Sources */,
 				896FF2CD1F1B2DF1006A08FA /* main.m in Sources */,
 				890148FC1F1C1EA6007E6169 /* TitleScene.m in Sources */,
 				891E5B4B1F1D1F7A003C0FFC /* SpaceCatNode.m in Sources */,
