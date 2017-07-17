@@ -7,6 +7,7 @@
 //
 
 #import "TitleScene.h"
+#import "GamePlayScene.h"
 
 @implementation TitleScene
 
@@ -19,6 +20,12 @@
         [self addChild:background];
     }
     return self;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    GamePlayScene *gamePlayScene = [GamePlayScene sceneWithSize:self.frame.size];
+    SKTransition *transition = [SKTransition fadeWithDuration:1.0];
+    [self.view presentScene:gamePlayScene transition:transition];
 }
 
 @end
