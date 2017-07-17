@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+static const int ProjectileSpeed = 400;
+
 @interface Utility : NSObject
+
+
 
 @end
