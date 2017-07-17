@@ -14,6 +14,9 @@
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"titlePage"];
+        background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        background.size = self.frame.size;
+        [self addChild:background];
     }
     return self;
 }
