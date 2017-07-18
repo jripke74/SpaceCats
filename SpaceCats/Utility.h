@@ -10,12 +10,15 @@
 
 static const int ProjectileSpeed = 400;
 
-typedef NS_OPTIONS(uint32_t, THCollisionCategory) {
-    THCollisionCategoryEnemy        = 1 << 0,   // 0000
-    THCollisionCategoryProjectile   = 1 << 1,   // 0010
-    THCollisionCategoryDebris       = 1 << 2,   // 0100
-    THCollisionCategoryGround       = 1 << 3    // 1000
+typedef NS_OPTIONS(uint32_t, CollisionCategory) {
+    CollisionCategoryEnemy        = 1 << 0,   // 0000
+    CollisionCategoryProjectile   = 1 << 1,   // 0010
+    CollisionCategoryDebris       = 1 << 2,   // 0100
+    CollisionCategoryGround       = 1 << 3    // 1000
 };
+
 @interface Utility : NSObject
+
++ (NSInteger) randomWithMin:(NSInteger)min max:(NSInteger)max;
 
 @end

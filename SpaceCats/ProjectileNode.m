@@ -23,9 +23,9 @@
 - (void) setupPhysicsBody {
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
     self.physicsBody.affectedByGravity = NO;
-    self.physicsBody.categoryBitMask = THCollisionCategoryProjectile;
+    self.physicsBody.categoryBitMask = CollisionCategoryProjectile;
     self.physicsBody.collisionBitMask = 0;
-    self.physicsBody.contactTestBitMask = THCollisionCategoryEnemy;
+    self.physicsBody.contactTestBitMask = CollisionCategoryEnemy;
 }
 
 - (void) setupAnimation {
@@ -45,9 +45,9 @@
     // y2 = slope * x2 - slope * x1 + y1
     float offscreenX;
     if (position.x <= self.position.x) {
-        offscreenX = -20;
+        offscreenX = -10;
     } else {
-        offscreenX = self.parent.frame.size.width + 20;
+        offscreenX = self.parent.frame.size.width + 10;
     }
     float offscreenY = slope * offscreenX - slope * self.position.x + self.position.y;
     CGPoint pointOffScreen = CGPointMake(offscreenX, offscreenY);
