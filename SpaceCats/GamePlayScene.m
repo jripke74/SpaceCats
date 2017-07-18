@@ -11,6 +11,7 @@
 #import "SpaceCatNode.h"
 #import "ProjectileNode.h"
 #import "SpaceDogNode.h"
+#import "GroundNode.h"
 
 @implementation GamePlayScene
 
@@ -28,6 +29,9 @@
         [self addChild:spaceCat];
         
         [self addSpaceDog];
+        self.physicsWorld.gravity = CGVectorMake(0, -9.8);
+        GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 22)];
+        [self addChild:ground];
     }
     return self;
 }
