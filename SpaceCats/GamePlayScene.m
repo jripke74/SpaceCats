@@ -18,6 +18,9 @@
 
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
 @property (nonatomic) NSTimeInterval timeSinceEnemyAdded;
+@property (nonatomic) NSTimeInterval totalGameTime;
+@property (nonatomic) NSInteger minSpeed;
+@property (nonatomic) NSTimeInterval addEnemyTimeInterval;
 
 @end
 
@@ -27,6 +30,10 @@
     if (self = [super initWithSize:size]) {
         self.lastUpdateTimeInterval = 0;
         self.timeSinceEnemyAdded = 0;
+        self.addEnemyTimeInterval = 1.5;
+        self.totalGameTime = 0;
+        self.minSpeed = SpaceDogMinSpeed;
+        
         SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"backgroundImage"];
         background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         background.size = self.frame.size;
@@ -50,12 +57,26 @@
 - (void) update:(NSTimeInterval)currentTime {
     if (self.lastUpdateTimeInterval) {
         self.timeSinceEnemyAdded += currentTime - self.lastUpdateTimeInterval;
+        self.totalGameTime += currentTime - self.lastUpdateTimeInterval;
     }
-    if (self.timeSinceEnemyAdded > 1.5) {
+    if (self.timeSinceEnemyAdded > self.addEnemyTimeInterval) {
         [self addSpaceDog];
         self.timeSinceEnemyAdded = 0;
     }
     self.lastUpdateTimeInterval = currentTime;
+    if (self.totalGameTime > 480) {
+        self.addEnemyTimeInterval = 0.5;
+        self.minSpeed = -160;
+    } else if (self.totalGameTime > 240) {
+        self.addEnemyTimeInterval = 0.65;
+        self.minSpeed = -150;
+    } else if (self.totalGameTime > 20) {
+        self.addEnemyTimeInterval = 0.75;
+        self.minSpeed = -125;
+    } else if (self.totalGameTime > 10) {
+        self.addEnemyTimeInterval = 1.00;
+        self.minSpeed = -100;
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -78,6 +99,8 @@
 - (void) addSpaceDog {
     NSUInteger randomSpaceDog = [Utility randomWithMin:0 max:2];
     SpaceDogNode *spaceDog = [SpaceDogNode spaceDogOfType:randomSpaceDog];
+    float dy = [Utility randomWithMin:SpaceDogMinSpeed max:SpaceDogMaxSpeed];
+    spaceDog.physicsBody.velocity = CGVectorMake(0, dy);
     float y = self.frame.size.height + spaceDog.size.height;
     float x = [Utility randomWithMin:10+spaceDog.size.width max:self.frame.size.width-spaceDog.size.width-10];
     
