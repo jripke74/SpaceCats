@@ -38,6 +38,7 @@
 		896FF2DD1F1B2DF1006A08FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2DB1F1B2DF1006A08FA /* Main.storyboard */; };
 		896FF2DF1F1B2DF1006A08FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2DE1F1B2DF1006A08FA /* Assets.xcassets */; };
 		896FF2E21F1B2DF1006A08FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2E01F1B2DF1006A08FA /* LaunchScreen.storyboard */; };
+		8971F8201F1FA98500F41117 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8971F81F1F1FA98500F41117 /* Explosion.sks */; };
 		89AB46D31F1F8A530075252E /* laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D01F1F8A530075252E /* laser.caf */; };
 		89AB46D41F1F8A530075252E /* damage.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D11F1F8A530075252E /* damage.caf */; };
 		89AB46D51F1F8A530075252E /* explode.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D21F1F8A530075252E /* explode.caf */; };
@@ -92,6 +93,7 @@
 		896FF2DE1F1B2DF1006A08FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896FF2E11F1B2DF1006A08FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896FF2E31F1B2DF1006A08FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8971F81F1F1FA98500F41117 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		89AB46D01F1F8A530075252E /* laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.caf; sourceTree = "<group>"; };
 		89AB46D11F1F8A530075252E /* damage.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = damage.caf; sourceTree = "<group>"; };
 		89AB46D21F1F8A530075252E /* explode.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode.caf; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				896FF2E01F1B2DF1006A08FA /* LaunchScreen.storyboard */,
 				896FF2E31F1B2DF1006A08FA /* Info.plist */,
 				896FF2CB1F1B2DF1006A08FA /* Supporting Files */,
+				8971F81F1F1FA98500F41117 /* Explosion.sks */,
 			);
 			path = SpaceCats;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				891E5B271F1CF70F003C0FFC /* projectile1.png in Resources */,
 				891E5B1B1F1CF70F003C0FFC /* hud.png in Resources */,
 				891E5B181F1CF70F003C0FFC /* debri_3.png in Resources */,
+				8971F8201F1FA98500F41117 /* Explosion.sks in Resources */,
 				891E5B2D1F1CF70F003C0FFC /* projectile3.png in Resources */,
 				89AB46D31F1F8A530075252E /* laser.caf in Resources */,
 				891E5B5F1F1D7763003C0FFC /* machine2.png in Resources */,
