@@ -28,6 +28,7 @@
 @property (nonatomic) SKAction *explodeSFX;
 @property (nonatomic) SKAction *laserSFX;
 @property (nonatomic) AVAudioPlayer *backgroundMusic;
+@property (nonatomic) AVAudioPlayer *gameOverMusic;
 @property (nonatomic) BOOL gameOver;
 @property (nonatomic) BOOL restart;
 @property (nonatomic) BOOL gameOverDisplayed;
@@ -79,6 +80,12 @@
     self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     self.backgroundMusic.numberOfLoops = -1;
     [self.backgroundMusic prepareToPlay];
+    
+    NSURL *gameOverURL = [[NSBundle mainBundle] URLForResource:@"Gameplay" withExtension:@"mp3"];
+    self.gameOverMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:gameOverURL error:nil];
+    self.gameOverMusic.numberOfLoops = 1;
+    [self.gameOverMusic prepareToPlay];
+    
     self.damageSFX = [SKAction playSoundFileNamed:@"damage.caf" waitForCompletion:NO];
     self.explodeSFX = [SKAction playSoundFileNamed:@"explode.caf" waitForCompletion:NO];
     self.laserSFX = [SKAction playSoundFileNamed:@"laser" waitForCompletion:NO];
@@ -133,6 +140,8 @@
     self.restart = YES;
     self.gameOverDisplayed = YES;
     [gameOver performAnimation];
+    [self.backgroundMusic stop];
+    [self.gameOverMusic play];
 }
 
 - (void) shootProjectileTowardsPosition:(CGPoint)position {

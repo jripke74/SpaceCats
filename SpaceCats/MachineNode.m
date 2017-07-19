@@ -19,6 +19,7 @@
     SKAction *machineAnimation = [SKAction animateWithTextures:textures timePerFrame:0.1];
     SKAction *machineRepeat = [SKAction repeatActionForever:machineAnimation];
     [machine runAction:machineRepeat];
+    machine.zPosition = 8;
     return machine;
 }
 @end
