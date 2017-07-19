@@ -145,6 +145,7 @@
         NSLog(@"BAM!!!");
         SpaceDogNode *spaceDog = (SpaceDogNode *)firstBody.node;
         ProjectileNode *projectile = (ProjectileNode *)secondBody.node;
+        [self addPoints: PointsPerHit];
         if ([spaceDog isDamaged]) {
             [self runAction:self.explodeSFX];
             [spaceDog removeFromParent];
@@ -157,7 +158,18 @@
         NSLog(@"Hit ground!");
         [self runAction:self.damageSFX];
         [self createDebrisAtPosition:contact.contactPoint];
+        [self loseLife];
     }
+}
+
+- (void) addPoints:(NSInteger)points {
+    HudNode *hud = (HudNode *)[self childNodeWithName:@"HUD"];
+    [hud addPoints:points];
+}
+
+- (void) loseLife {
+    HudNode *hud = (HudNode *)[self childNodeWithName:@"HUD"];
+    [hud loseLife];
 }
 
 - (void) createDebrisAtPosition:(CGPoint)position {
