@@ -40,6 +40,7 @@
 		8971F8201F1FA98500F41117 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8971F81F1F1FA98500F41117 /* Explosion.sks */; };
 		8971F8231F1FB27900F41117 /* HudNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8971F8221F1FB27900F41117 /* HudNode.m */; };
 		8971F8251F1FB8D600F41117 /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8971F8241F1FB8D600F41117 /* hud.png */; };
+		899199831F1FE59E006BF768 /* GameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 899199821F1FE59E006BF768 /* GameOverNode.m */; };
 		89AB46D31F1F8A530075252E /* laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D01F1F8A530075252E /* laser.caf */; };
 		89AB46D41F1F8A530075252E /* damage.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D11F1F8A530075252E /* damage.caf */; };
 		89AB46D51F1F8A530075252E /* explode.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D21F1F8A530075252E /* explode.caf */; };
@@ -97,6 +98,8 @@
 		8971F8211F1FB27900F41117 /* HudNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudNode.h; sourceTree = "<group>"; };
 		8971F8221F1FB27900F41117 /* HudNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudNode.m; sourceTree = "<group>"; };
 		8971F8241F1FB8D600F41117 /* hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud.png; sourceTree = "<group>"; };
+		899199811F1FE59E006BF768 /* GameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverNode.h; sourceTree = "<group>"; };
+		899199821F1FE59E006BF768 /* GameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverNode.m; sourceTree = "<group>"; };
 		89AB46D01F1F8A530075252E /* laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.caf; sourceTree = "<group>"; };
 		89AB46D11F1F8A530075252E /* damage.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = damage.caf; sourceTree = "<group>"; };
 		89AB46D21F1F8A530075252E /* explode.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode.caf; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				8901492E1F1C433E007E6169 /* GamePlayScene.m */,
 				8971F8211F1FB27900F41117 /* HudNode.h */,
 				8971F8221F1FB27900F41117 /* HudNode.m */,
+				899199811F1FE59E006BF768 /* GameOverNode.h */,
+				899199821F1FE59E006BF768 /* GameOverNode.m */,
 				891E5B551F1D47F6003C0FFC /* SpaceDogNode.h */,
 				891E5B561F1D47F6003C0FFC /* SpaceDogNode.m */,
 				891E5B491F1D1F7A003C0FFC /* SpaceCatNode.h */,
@@ -328,6 +333,7 @@
 				896FF2DA1F1B2DF1006A08FA /* GameViewController.m in Sources */,
 				896FF2D01F1B2DF1006A08FA /* AppDelegate.m in Sources */,
 				891E5B4E1F1D2A69003C0FFC /* ProjectileNode.m in Sources */,
+				899199831F1FE59E006BF768 /* GameOverNode.m in Sources */,
 				8901492F1F1C433E007E6169 /* GamePlayScene.m in Sources */,
 				891E5B541F1D424A003C0FFC /* Utility.m in Sources */,
 				891E5B571F1D47F6003C0FFC /* SpaceDogNode.m in Sources */,
