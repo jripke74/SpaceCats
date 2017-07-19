@@ -12,7 +12,6 @@
 		891E5B121F1CF70F003C0FFC /* debri_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5AEA1F1CF70F003C0FFC /* debri_1.png */; };
 		891E5B151F1CF70F003C0FFC /* debri_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5AED1F1CF70F003C0FFC /* debri_2.png */; };
 		891E5B181F1CF70F003C0FFC /* debri_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5AF01F1CF70F003C0FFC /* debri_3.png */; };
-		891E5B1B1F1CF70F003C0FFC /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5AF31F1CF70F003C0FFC /* hud.png */; };
 		891E5B1E1F1CF70F003C0FFC /* hudLife.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5AF61F1CF70F003C0FFC /* hudLife.png */; };
 		891E5B271F1CF70F003C0FFC /* projectile1.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5AFF1F1CF70F003C0FFC /* projectile1.png */; };
 		891E5B2A1F1CF70F003C0FFC /* projectile2.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5B021F1CF70F003C0FFC /* projectile2.png */; };
@@ -39,6 +38,8 @@
 		896FF2DF1F1B2DF1006A08FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2DE1F1B2DF1006A08FA /* Assets.xcassets */; };
 		896FF2E21F1B2DF1006A08FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2E01F1B2DF1006A08FA /* LaunchScreen.storyboard */; };
 		8971F8201F1FA98500F41117 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8971F81F1F1FA98500F41117 /* Explosion.sks */; };
+		8971F8231F1FB27900F41117 /* HudNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8971F8221F1FB27900F41117 /* HudNode.m */; };
+		8971F8251F1FB8D600F41117 /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8971F8241F1FB8D600F41117 /* hud.png */; };
 		89AB46D31F1F8A530075252E /* laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D01F1F8A530075252E /* laser.caf */; };
 		89AB46D41F1F8A530075252E /* damage.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D11F1F8A530075252E /* damage.caf */; };
 		89AB46D51F1F8A530075252E /* explode.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D21F1F8A530075252E /* explode.caf */; };
@@ -57,7 +58,6 @@
 		891E5AEA1F1CF70F003C0FFC /* debri_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debri_1.png; sourceTree = "<group>"; };
 		891E5AED1F1CF70F003C0FFC /* debri_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debri_2.png; sourceTree = "<group>"; };
 		891E5AF01F1CF70F003C0FFC /* debri_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debri_3.png; sourceTree = "<group>"; };
-		891E5AF31F1CF70F003C0FFC /* hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud.png; sourceTree = "<group>"; };
 		891E5AF61F1CF70F003C0FFC /* hudLife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hudLife.png; sourceTree = "<group>"; };
 		891E5AFF1F1CF70F003C0FFC /* projectile1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projectile1.png; sourceTree = "<group>"; };
 		891E5B021F1CF70F003C0FFC /* projectile2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projectile2.png; sourceTree = "<group>"; };
@@ -94,6 +94,9 @@
 		896FF2E11F1B2DF1006A08FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896FF2E31F1B2DF1006A08FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8971F81F1F1FA98500F41117 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		8971F8211F1FB27900F41117 /* HudNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudNode.h; sourceTree = "<group>"; };
+		8971F8221F1FB27900F41117 /* HudNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudNode.m; sourceTree = "<group>"; };
+		8971F8241F1FB8D600F41117 /* hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud.png; sourceTree = "<group>"; };
 		89AB46D01F1F8A530075252E /* laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.caf; sourceTree = "<group>"; };
 		89AB46D11F1F8A530075252E /* damage.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = damage.caf; sourceTree = "<group>"; };
 		89AB46D21F1F8A530075252E /* explode.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode.caf; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 		891E5AE91F1CF70F003C0FFC /* Sprites.atlas */ = {
 			isa = PBXGroup;
 			children = (
+				8971F8241F1FB8D600F41117 /* hud.png */,
 				8950B8511F1F09510082CAC5 /* dougGunFire.png */,
 				8950B84D1F1F07B10082CAC5 /* dougGun.png */,
 				8950B8471F1EEAEB0082CAC5 /* douglas.png */,
@@ -131,7 +135,6 @@
 				891E5AEA1F1CF70F003C0FFC /* debri_1.png */,
 				891E5AED1F1CF70F003C0FFC /* debri_2.png */,
 				891E5AF01F1CF70F003C0FFC /* debri_3.png */,
-				891E5AF31F1CF70F003C0FFC /* hud.png */,
 				891E5AF61F1CF70F003C0FFC /* hudLife.png */,
 				891E5AFF1F1CF70F003C0FFC /* projectile1.png */,
 				891E5B021F1CF70F003C0FFC /* projectile2.png */,
@@ -180,6 +183,8 @@
 				890148FB1F1C1EA6007E6169 /* TitleScene.m */,
 				8901492D1F1C433E007E6169 /* GamePlayScene.h */,
 				8901492E1F1C433E007E6169 /* GamePlayScene.m */,
+				8971F8211F1FB27900F41117 /* HudNode.h */,
+				8971F8221F1FB27900F41117 /* HudNode.m */,
 				891E5B551F1D47F6003C0FFC /* SpaceDogNode.h */,
 				891E5B561F1D47F6003C0FFC /* SpaceDogNode.m */,
 				891E5B491F1D1F7A003C0FFC /* SpaceCatNode.h */,
@@ -285,7 +290,6 @@
 				89AB46DC1F1F94310075252E /* Gameplay.mp3 in Resources */,
 				891E5B121F1CF70F003C0FFC /* debri_1.png in Resources */,
 				891E5B271F1CF70F003C0FFC /* projectile1.png in Resources */,
-				891E5B1B1F1CF70F003C0FFC /* hud.png in Resources */,
 				891E5B181F1CF70F003C0FFC /* debri_3.png in Resources */,
 				8971F8201F1FA98500F41117 /* Explosion.sks in Resources */,
 				891E5B2D1F1CF70F003C0FFC /* projectile3.png in Resources */,
@@ -310,6 +314,7 @@
 				896FF2E21F1B2DF1006A08FA /* LaunchScreen.storyboard in Resources */,
 				891E5B1E1F1CF70F003C0FFC /* hudLife.png in Resources */,
 				89AB46DD1F1F94310075252E /* StartScreen.mp3 in Resources */,
+				8971F8251F1FB8D600F41117 /* hud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +336,7 @@
 				8950B7FA1F1E5CB90082CAC5 /* GroundNode.m in Sources */,
 				891E5B4B1F1D1F7A003C0FFC /* SpaceCatNode.m in Sources */,
 				891E5B481F1D0341003C0FFC /* MachineNode.m in Sources */,
+				8971F8231F1FB27900F41117 /* HudNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

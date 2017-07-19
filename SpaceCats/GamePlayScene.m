@@ -14,6 +14,7 @@
 #import "GroundNode.h"
 #import "Utility.h"
 #import <AVFoundation/AVFoundation.h>
+#import "HudNode.h"
 
 @interface GamePlayScene ()
 
@@ -56,6 +57,8 @@
         GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 22)];
         [self addChild:ground];
         [self setupSounds];
+        HudNode *hud = [HudNode hudAtPosition:CGPointMake(0, self.frame.size.height-20) inFrame:self.frame];
+        [self addChild:hud];
     }
     return self;
 }
@@ -161,7 +164,7 @@
     NSInteger numberOfPieces = [Utility randomWithMin:5 max:20];
     for (int i=0; i < numberOfPieces; i++) {
         NSInteger randomPiece = [Utility randomWithMin:1 max:4];
-        NSString *imageName = [NSString stringWithFormat:@"debri_%d", randomPiece];
+        NSString *imageName = [NSString stringWithFormat:@"debri_%ld", (long)randomPiece];
         SKSpriteNode *debris = [SKSpriteNode spriteNodeWithImageNamed:imageName];
         debris.position = position;
         [self addChild:debris];
