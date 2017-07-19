@@ -29,12 +29,23 @@
 		891E5B631F1D78DA003C0FFC /* spaceDogA1.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5B621F1D78DA003C0FFC /* spaceDogA1.png */; };
 		891E5B651F1D824F003C0FFC /* spaceDogB1.png in Resources */ = {isa = PBXBuildFile; fileRef = 891E5B641F1D824F003C0FFC /* spaceDogB1.png */; };
 		8950B7FA1F1E5CB90082CAC5 /* GroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950B7F91F1E5CB90082CAC5 /* GroundNode.m */; };
+		8950B8481F1EEAEB0082CAC5 /* douglas.png in Resources */ = {isa = PBXBuildFile; fileRef = 8950B8471F1EEAEB0082CAC5 /* douglas.png */; };
+		8950B84E1F1F07B10082CAC5 /* dougGun.png in Resources */ = {isa = PBXBuildFile; fileRef = 8950B84D1F1F07B10082CAC5 /* dougGun.png */; };
+		8950B8521F1F09510082CAC5 /* dougGunFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 8950B8511F1F09510082CAC5 /* dougGunFire.png */; };
 		896FF2CD1F1B2DF1006A08FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2CC1F1B2DF1006A08FA /* main.m */; };
 		896FF2D01F1B2DF1006A08FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2CF1F1B2DF1006A08FA /* AppDelegate.m */; };
 		896FF2DA1F1B2DF1006A08FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FF2D91F1B2DF1006A08FA /* GameViewController.m */; };
 		896FF2DD1F1B2DF1006A08FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2DB1F1B2DF1006A08FA /* Main.storyboard */; };
 		896FF2DF1F1B2DF1006A08FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2DE1F1B2DF1006A08FA /* Assets.xcassets */; };
 		896FF2E21F1B2DF1006A08FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896FF2E01F1B2DF1006A08FA /* LaunchScreen.storyboard */; };
+		89AB46D31F1F8A530075252E /* laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D01F1F8A530075252E /* laser.caf */; };
+		89AB46D41F1F8A530075252E /* damage.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D11F1F8A530075252E /* damage.caf */; };
+		89AB46D51F1F8A530075252E /* explode.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D21F1F8A530075252E /* explode.caf */; };
+		89AB46D71F1F8B090075252E /* pressStart.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D61F1F8B090075252E /* pressStart.caf */; };
+		89AB46DB1F1F94310075252E /* GameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D81F1F94310075252E /* GameOver.mp3 */; };
+		89AB46DC1F1F94310075252E /* Gameplay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46D91F1F94310075252E /* Gameplay.mp3 */; };
+		89AB46DD1F1F94310075252E /* StartScreen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89AB46DA1F1F94310075252E /* StartScreen.mp3 */; };
+		89AB46E01F1F949B0075252E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AB46DF1F1F949B0075252E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +79,9 @@
 		891E5B641F1D824F003C0FFC /* spaceDogB1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceDogB1.png; sourceTree = "<group>"; };
 		8950B7F81F1E5CB90082CAC5 /* GroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundNode.h; sourceTree = "<group>"; };
 		8950B7F91F1E5CB90082CAC5 /* GroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroundNode.m; sourceTree = "<group>"; };
+		8950B8471F1EEAEB0082CAC5 /* douglas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = douglas.png; sourceTree = "<group>"; };
+		8950B84D1F1F07B10082CAC5 /* dougGun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dougGun.png; sourceTree = "<group>"; };
+		8950B8511F1F09510082CAC5 /* dougGunFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dougGunFire.png; sourceTree = "<group>"; };
 		896FF2C81F1B2DF1006A08FA /* SpaceCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896FF2CC1F1B2DF1006A08FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		896FF2CE1F1B2DF1006A08FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +92,14 @@
 		896FF2DE1F1B2DF1006A08FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896FF2E11F1B2DF1006A08FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896FF2E31F1B2DF1006A08FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89AB46D01F1F8A530075252E /* laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.caf; sourceTree = "<group>"; };
+		89AB46D11F1F8A530075252E /* damage.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = damage.caf; sourceTree = "<group>"; };
+		89AB46D21F1F8A530075252E /* explode.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode.caf; sourceTree = "<group>"; };
+		89AB46D61F1F8B090075252E /* pressStart.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pressStart.caf; sourceTree = "<group>"; };
+		89AB46D81F1F94310075252E /* GameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameOver.mp3; sourceTree = "<group>"; };
+		89AB46D91F1F94310075252E /* Gameplay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gameplay.mp3; sourceTree = "<group>"; };
+		89AB46DA1F1F94310075252E /* StartScreen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartScreen.mp3; sourceTree = "<group>"; };
+		89AB46DF1F1F949B0075252E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AB46E01F1F949B0075252E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +117,9 @@
 		891E5AE91F1CF70F003C0FFC /* Sprites.atlas */ = {
 			isa = PBXGroup;
 			children = (
+				8950B8511F1F09510082CAC5 /* dougGunFire.png */,
+				8950B84D1F1F07B10082CAC5 /* dougGun.png */,
+				8950B8471F1EEAEB0082CAC5 /* douglas.png */,
 				891E5B641F1D824F003C0FFC /* spaceDogB1.png */,
 				891E5B621F1D78DA003C0FFC /* spaceDogA1.png */,
 				891E5B5C1F1D7763003C0FFC /* machine1.png */,
@@ -113,11 +139,26 @@
 			path = Sprites;
 			sourceTree = "<group>";
 		};
+		8950B8461F1EBCA20082CAC5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				89AB46D81F1F94310075252E /* GameOver.mp3 */,
+				89AB46D91F1F94310075252E /* Gameplay.mp3 */,
+				89AB46DA1F1F94310075252E /* StartScreen.mp3 */,
+				89AB46D61F1F8B090075252E /* pressStart.caf */,
+				89AB46D01F1F8A530075252E /* laser.caf */,
+				89AB46D11F1F8A530075252E /* damage.caf */,
+				89AB46D21F1F8A530075252E /* explode.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		896FF2BF1F1B2DF1006A08FA = {
 			isa = PBXGroup;
 			children = (
 				896FF2CA1F1B2DF1006A08FA /* SpaceCats */,
 				896FF2C91F1B2DF1006A08FA /* Products */,
+				89AB46DE1F1F949B0075252E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +173,7 @@
 		896FF2CA1F1B2DF1006A08FA /* SpaceCats */ = {
 			isa = PBXGroup;
 			children = (
+				8950B8461F1EBCA20082CAC5 /* Sounds */,
 				890148FA1F1C1EA6007E6169 /* TitleScene.h */,
 				890148FB1F1C1EA6007E6169 /* TitleScene.m */,
 				8901492D1F1C433E007E6169 /* GamePlayScene.h */,
@@ -168,6 +210,14 @@
 				896FF2CC1F1B2DF1006A08FA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89AB46DE1F1F949B0075252E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89AB46DF1F1F949B0075252E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,23 +279,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AB46DC1F1F94310075252E /* Gameplay.mp3 in Resources */,
 				891E5B121F1CF70F003C0FFC /* debri_1.png in Resources */,
 				891E5B271F1CF70F003C0FFC /* projectile1.png in Resources */,
 				891E5B1B1F1CF70F003C0FFC /* hud.png in Resources */,
 				891E5B181F1CF70F003C0FFC /* debri_3.png in Resources */,
 				891E5B2D1F1CF70F003C0FFC /* projectile3.png in Resources */,
+				89AB46D31F1F8A530075252E /* laser.caf in Resources */,
 				891E5B5F1F1D7763003C0FFC /* machine2.png in Resources */,
 				891E5B5B1F1D6FFD003C0FFC /* spaceCat2.png in Resources */,
+				8950B8481F1EEAEB0082CAC5 /* douglas.png in Resources */,
+				89AB46D71F1F8B090075252E /* pressStart.caf in Resources */,
 				891E5B2A1F1CF70F003C0FFC /* projectile2.png in Resources */,
 				891E5B5E1F1D7763003C0FFC /* machine1.png in Resources */,
 				891E5B631F1D78DA003C0FFC /* spaceDogA1.png in Resources */,
+				8950B84E1F1F07B10082CAC5 /* dougGun.png in Resources */,
+				89AB46DB1F1F94310075252E /* GameOver.mp3 in Resources */,
 				891E5B651F1D824F003C0FFC /* spaceDogB1.png in Resources */,
+				8950B8521F1F09510082CAC5 /* dougGunFire.png in Resources */,
+				89AB46D41F1F8A530075252E /* damage.caf in Resources */,
+				89AB46D51F1F8A530075252E /* explode.caf in Resources */,
 				891E5B151F1CF70F003C0FFC /* debri_2.png in Resources */,
 				896FF2DD1F1B2DF1006A08FA /* Main.storyboard in Resources */,
 				896FF2DF1F1B2DF1006A08FA /* Assets.xcassets in Resources */,
 				891E5B5A1F1D6FFD003C0FFC /* spaceCat1.png in Resources */,
 				896FF2E21F1B2DF1006A08FA /* LaunchScreen.storyboard in Resources */,
 				891E5B1E1F1CF70F003C0FFC /* hudLife.png in Resources */,
+				89AB46DD1F1F94310075252E /* StartScreen.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

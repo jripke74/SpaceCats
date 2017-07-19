@@ -13,6 +13,7 @@
 #import "SpaceDogNode.h"
 #import "GroundNode.h"
 #import "Utility.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface GamePlayScene ()
 
@@ -21,6 +22,10 @@
 @property (nonatomic) NSTimeInterval totalGameTime;
 @property (nonatomic) NSInteger minSpeed;
 @property (nonatomic) NSTimeInterval addEnemyTimeInterval;
+@property (nonatomic) SKAction *damageSFX;
+@property (nonatomic) SKAction *explodeSFX;
+@property (nonatomic) SKAction *laserSFX;
+@property (nonatomic) AVAudioPlayer *backgroundMusic;
 
 @end
 
@@ -30,7 +35,7 @@
     if (self = [super initWithSize:size]) {
         self.lastUpdateTimeInterval = 0;
         self.timeSinceEnemyAdded = 0;
-        self.addEnemyTimeInterval = 1.5;
+        self.addEnemyTimeInterval = 3.1;
         self.totalGameTime = 0;
         self.minSpeed = SpaceDogMinSpeed;
         
@@ -50,8 +55,23 @@
         
         GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 22)];
         [self addChild:ground];
+        [self setupSounds];
     }
     return self;
+}
+
+- (void) didMoveToView:(SKView *)view {
+    [self.backgroundMusic play];
+}
+
+- (void) setupSounds {
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Gameplay" withExtension:@"mp3"];
+    self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    self.backgroundMusic.numberOfLoops = -1;
+    [self.backgroundMusic prepareToPlay];
+    self.damageSFX = [SKAction playSoundFileNamed:@"damage.caf" waitForCompletion:NO];
+    self.explodeSFX = [SKAction playSoundFileNamed:@"explode.caf" waitForCompletion:NO];
+    self.laserSFX = [SKAction playSoundFileNamed:@"laser" waitForCompletion:NO];
 }
 
 - (void) update:(NSTimeInterval)currentTime {
@@ -93,6 +113,7 @@
     ProjectileNode *projectile = [ProjectileNode projectileAtPosition:CGPointMake(machine.position.x, machine.position.y+machine.frame.size.height-15)];
     [self addChild:projectile];
     [projectile moveTowardsPosition:position];
+    [self runAction:self.laserSFX];
     
 }
 
@@ -121,12 +142,14 @@
         NSLog(@"BAM!!!");
         SpaceDogNode *spaceDog = (SpaceDogNode *)firstBody.node;
         ProjectileNode *projectile = (ProjectileNode *)secondBody.node;
+        [self runAction:self.explodeSFX];
         [spaceDog removeFromParent];
         [projectile removeFromParent];
     } else if (firstBody.categoryBitMask == CollisionCategoryEnemy && secondBody.categoryBitMask == CollisionCategoryGround) {
         SpaceDogNode *spaceDog = (SpaceDogNode *)firstBody.node;
         [spaceDog removeFromParent];
         NSLog(@"Hit ground!");
+        [self runAction:self.damageSFX];
     }
     [self createDebrisAtPosition:contact.contactPoint];
 }
